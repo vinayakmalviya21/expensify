@@ -1,0 +1,97 @@
+<div class="container">
+
+  <mat-card class="register-card">
+
+    <h2>Create Account</h2>
+
+    <!-- NAME -->
+
+    <mat-form-field
+      appearance="outline"
+      class="full-width">
+
+      <mat-label>Name*</mat-label>
+
+      <input
+        matInput
+        [(ngModel)]="registerData.name">
+
+    </mat-form-field>
+
+    <!-- EMAIL -->
+
+    <mat-form-field
+      appearance="outline"
+      class="full-width">
+
+      <mat-label>Email*</mat-label>
+
+      <input
+        matInput
+        type="email"
+        [(ngModel)]="registerData.email">
+
+    </mat-form-field>
+
+    <!-- PASSWORD -->
+
+    <mat-form-field
+      appearance="outline"
+      class="full-width">
+
+      <mat-label>Password*</mat-label>
+
+      <input
+        matInput
+        [type]="hidePassword ? 'password' : 'text'"
+        [(ngModel)]="registerData.password">
+
+      <!-- EYE BUTTON -->
+
+      <button
+        mat-icon-button
+        matSuffix
+        type="button"
+        (click)="hidePassword = !hidePassword">
+
+        <mat-icon>
+
+          {{hidePassword
+            ? 'visibility_off'
+            : 'visibility'}}
+
+        </mat-icon>
+
+      </button>
+
+    </mat-form-field>
+
+    <!-- REGISTER BTN -->
+
+    <button
+      mat-raised-button
+      color="primary"
+      class="full-width"
+      (click)="register()">
+
+      Register
+
+    </button>
+
+    <!-- LOGIN LINK -->
+
+    <p class="link">
+
+      Already have an account?
+
+      <a routerLink="/">
+
+        Login
+
+      </a>
+
+    </p>
+
+  </mat-card>
+
+</div>

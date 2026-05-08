@@ -1,0 +1,19 @@
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.spacer{
+  flex:1;
+}
+
+button{
+  margin-left:10px;
+}

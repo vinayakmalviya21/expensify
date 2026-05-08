@@ -9,4 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('expense-tracker-frontend');
+
+  toggleTheme(){
+ document.body.classList.toggle('dark-theme');
+}
 }

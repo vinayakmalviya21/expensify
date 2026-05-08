@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="navbar">
+
+  <!-- LOGO / TITLE -->
+
+  <span
+    class="logo"
+    routerLink="/expenses">
+
+    ExpenseTracker
+
+  </span>
+
+  <span class="spacer"></span>
+
+  <!-- NAV LINKS -->
+
+  <button
+    mat-button
+    routerLink="/expenses">
+
+    Expenses
+
+  </button>
+
+  <!-- LOGOUT -->
+
+  <button
+    mat-raised-button
+    color="warn"
+    (click)="logout()">
+
+    Logout
+
+  </button>
+
+</mat-toolbar>
