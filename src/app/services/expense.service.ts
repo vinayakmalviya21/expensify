@@ -8,7 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class ExpenseService {
 
-  private apiUrl = 'http://localhost:8080/expenses';
+  // private apiUrl = 'http://localhost:8080/expenses';
+  private apiUrl = 'https://expensify-backend-qkkm.onrender.com/expenses';
 
   constructor(private http: HttpClient) {}
 

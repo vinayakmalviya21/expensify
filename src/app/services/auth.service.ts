@@ -8,7 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private apiUrl = 'http://localhost:8080/auth';
+  // private apiUrl = 'http://localhost:8080/auth';
+  private apiUrl = 'https://expensify-backend-qkkm.onrender.com/auth';
 
   constructor(private http: HttpClient) {}
 
